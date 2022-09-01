@@ -2,7 +2,7 @@ $(function(){
     var nome = $('#painel #nome');
 
     function aparecer(){
-        nome.fadeIn(1000)
+        nome.fadeIn(2000)
     }
     aparecer();
 

@@ -12,7 +12,7 @@ function escrevendo(el){
         }, 50 * i);
         
     });
-    }, 1500);
+    }, 2000);
 }
 
 
