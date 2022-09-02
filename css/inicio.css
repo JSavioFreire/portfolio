@@ -324,7 +324,7 @@ header #painel h2{
 }
 #oqfaco #port .titulo{
     height: 100%;
-    width: 30%;
+    width: 600px;
     padding: 50px;
     color: white;
     font-size: 20px;
@@ -354,12 +354,15 @@ header #painel h2{
 }
 #oqfaco #port .projeto{
     height: 100%;
-    width: 20%;
+    width: 400px;
+    border-left: 1px solid white;
+    display: none;
 }
 #oqfaco #port .projeto img{
     width: 100%;
     height: 100%;
 }
+
 
 
 

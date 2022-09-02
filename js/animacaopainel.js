@@ -1,3 +1,5 @@
+
+
 var text = document.querySelector('#painel h2');
 
 function escrevendo(el){
@@ -5,7 +7,6 @@ function escrevendo(el){
     el.innerHTML= '';
     setTimeout(() => {
         
-    
     nomearray.forEach((letra,i) => {
         setTimeout(() => {
             el.innerHTML += letra
