@@ -1,8 +1,8 @@
 $(function(){
-    var nome = $('#painel #nome');
+    var nome = $('.oitentapor');
 
     function aparecer(){
-        nome.fadeIn(2000)
+        nome.fadeIn(1500)
     }
     aparecer();
 

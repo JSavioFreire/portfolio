@@ -22,6 +22,7 @@
 .oitentapor{
     width: 80%;
     margin: 0 auto;
+    display: none;
 }
 
     /*Clear*/
@@ -115,7 +116,6 @@ header #painel{
 }
 header #painel #nome{
     margin-top: 120px;
-    display: none;
 }
 header #painel #nome h1{
     font-size: 60px;
@@ -160,22 +160,22 @@ header #painel h2{
 
 #espacogradient{
     width: 100%;
-    height: 100px;
+    height: 200px;
     background: linear-gradient(rgba(0, 0, 0, 0),black);
     z-index: 1;
-    margin-top: -120px;
+    margin-top: -220px;
 }
 #apresentacao{
     width: 100%;
     background-color: black;
     display: flex;
-    flex-direction: row;
     font-family: opens;
+    justify-content: center;
 }
 #apresentacao .quemsou{
     color: white;
     width: 50%; 
-    margin: 100px;
+    margin: 50px 0;
     text-align: justify;
 }
 #apresentacao .quemsou h1{
@@ -188,9 +188,189 @@ header #painel h2{
 }
 #apresentacao .foto {
     width: 20%;
+    margin: 50px 0 10px 100px;
 }
 #apresentacao .foto img{
     width: 100%;
     border-radius: 50%;
     border: 1px solid white;
+}
+
+
+    /*Skills*/
+
+
+#skills{
+    background-color: #2558f3;
+    font-family: opens;
+    padding: 30px 0 50px 0;
+    border-bottom: 2px solid  black;
+}
+#skills h2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+}
+#skills #imgskill{
+    text-align: center;
+}
+#skills #imgskill > div{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    display: inline-block;
+    animation: bolhas 3s infinite;
+}
+#skills #imgskill > div .nomeskill{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: -50px;
+    font-size: 22px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    display: none;
+}
+#skills #imgskill .abaixo{
+    position: relative;
+    top: 50px;
+    animation: bolhasbaixas 2s infinite;
+}
+#skills #imgskill > div img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+#skills #imgskill > div .bolha{
+    width: 100%;
+    
+}
+#skills #imgskill > div .logo{
+    width: 50%;
+    
+}
+
+    /*Animacao bolhas*/
+
+@keyframes bolhas{
+    0%{
+        top: 20px;
+        
+    }
+    50%{
+        top: 30px;
+    }
+    100%{
+        top: 20px;
+    }
+
+}
+@keyframes bolhasbaixas{
+    0%{
+        top: 50px;
+    }
+    50%{
+        top: 60px;
+    }
+    100%{
+        top: 50px;
+    }
+
+}
+
+#oqfaco{
+    text-align: center;
+    padding-top: 50px;
+    font-family: opens;
+}
+#oqfaco .box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #2558f3;
+}
+
+#oqfaco .box > div{
+    width: 400px;
+    padding: 20px 20px 50px 20px;
+    
+    margin: 0 20px;
+    border: 1px solid #2558f3;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+#oqfaco > h2{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.414);
+}
+#oqfaco .box > div p{
+    text-align: justify;
+}
+
+/*Portfolio*/
+
+#oqfaco #port{
+    width: 100%;
+    height: 300px;
+    background-color: #2558f3;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    
+}
+#oqfaco #port .titulo{
+    height: 100%;
+    width: 30%;
+    padding: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+#oqfaco #port .titulo h2{
+    font-size: 40px;
+}
+#oqfaco #port .titulo > .seta{
+    width: 40px;
+    height: 40px;
+    margin: 20px 20px 0 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: content-box;
+    padding: 10px;
+    position: relative;
+}
+#oqfaco #port .titulo > .seta img{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#oqfaco #port .projeto{
+    height: 100%;
+    width: 20%;
+}
+#oqfaco #port .projeto img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    height: 500px;
+    background-color: black;
 }
