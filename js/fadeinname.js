@@ -1,5 +1,5 @@
 $(function(){
-    var nome = $('.oitentapor');
+    var nome = $('#nome');
 
     function aparecer(){
         nome.fadeIn(1500)
