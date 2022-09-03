@@ -307,7 +307,7 @@ header #painel h2{
 
 #oqfaco .box > div{
     width: 400px;
-    padding: 20px 20px 50px 20px;
+    padding: 20px;
     margin: 0 20px;
     border: 1px solid #2558f3;
     border-radius: 5px;
@@ -315,6 +315,8 @@ header #painel h2{
 }
 #oqfaco > h2{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.414);
+}#oqfaco .box > div h2{
+    margin-bottom: 20px;
 }
 #oqfaco .box > div p{
     text-align: justify;
