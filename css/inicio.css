@@ -73,9 +73,27 @@ header #menumobile{
     width: 60px;
     margin-top: 50px;
     margin-left: 85%;
+    cursor: pointer;
 }
 header #menumobile img{
     width: 100%;
+}
+header #menuaberto{
+    background-color: rgba(0, 0, 0, 0.889);
+    color: white;
+    position: absolute;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: openS, Arial, Helvetica, sans-serif;
+    right: 10px;
+    display: none;
+    
+}
+header #menuaberto li{
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
     /*Telefone de contato*/
@@ -338,7 +356,7 @@ header #painel h2{
 #contato{
     background-color: #131313;
     color: white;
-    font-family: openS;
+    font-family: openS, Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 50px 0;
 }
