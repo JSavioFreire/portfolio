@@ -195,80 +195,82 @@ header #painel h2{
 }
 #apresentacao{
     width: 100%;
-    background: linear-gradient(black,#020024);
+    background-color: black;
     display: flex;
     font-family: opens;
     justify-content: center;
     border-bottom: 1px solid white;
+    color: white;
+    margin: auto;
+    padding: 50px;
+}
+#apresentacao .foto{
+    margin: auto;
+    width: 30%;
+    position: relative;
+}
+#apresentacao .foto img{
+    width: 220px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #2558f3;
+    
 }
 #apresentacao .quemsou{
-    color: white;
-    width: 50%; 
-    margin: 50px 0;
+    width: 34%;
     text-align: justify;
+    text-indent: 30px;
 }
 #apresentacao .quemsou h1{
     font-size: 50px;
-    text-indent: 100px;
-}
-#apresentacao .quemsou p{
-    margin-top: 20px;
-    text-indent: 30px;
-}
-#apresentacao .foto {
-    width: 20%;
-    margin: 50px 0 10px 100px;
-}
-#apresentacao .foto img{
-    width: 100%;
-    border-radius: 50%;
-    border: 1px solid white;
+    color: #2558f3;
+    
 }
 
+#apresentacao #citacao{
+    width: 34%;
+    font-size: 25px;
+    margin-top: 50px ;
+}
+#apresentacao #citacao h2{
+    color: #2558f3;
+    font-weight: 100;
+}
+
+#apresentacao #citacao p{
+    margin: 20px 0;
+}
+#apresentacao #citacao blockquote{
+    text-align: right;
+    font-size: 30px;
+    color: #2558f3;
+
+}
 
     /*Skills*/
 
 
 #skills{
-    background: rgb(2,0,36);
-    background: linear-gradient(170deg, #020024 0%, #090979 100%, #00d4ff 100%);
     font-family: opens;
-    padding: 30px 0;
-    border-bottom: 2px solid  black;
-    padding-bottom: 100px;
-}
-#skills h2{
-    text-align: center;
-    color: white;
-    font-size: 35px;
-    text-shadow: 2px 2px 2px black;
-}
-#skills #imgskill{
+    height: 5px;
     text-align: center;
 }
 #skills #imgskill > div{
-    width: 220px;
-    height: 220px;
+    width: 70px;
+    height: 70px;
     position: relative;
     display: inline-block;
-    animation: bolhas 7s infinite;
+    animation: bolhas 20s infinite;
+    margin-left: 2%;
+    
 
-}
-#skills #imgskill > div .nomeskill{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    bottom: -50px;
-    font-size: 22px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-weight: bold;
-    display: none;
 }
 #skills #imgskill .abaixo{
     position: relative;
-    top: 50px;
-    animation: bolhasbaixas 5s infinite;
+    top: 0px;
+    animation: bolhasbaixas 15s infinite;
 }
 #skills #imgskill > div img{
     position: absolute;
@@ -282,6 +284,7 @@ header #painel h2{
 }
 #skills #imgskill > div .logo{
     width: 50%;
+    opacity: 0.8;
     
 }
 
@@ -289,31 +292,30 @@ header #painel h2{
 
 @keyframes bolhas{
     0%{
-        top: 20px;
-        left: -10px;
-        
+        top: -60px;
+        right: 10px;
     }
     50%{
-        top: 80px;
-        left: 0px
+        top: -120px;
+        right: 0px;
     }
     100%{
-        left: -10px;
-        top: 20px;
+        top: -60px;
+        right: 10px;
     }
 
 }
 @keyframes bolhasbaixas{
     0%{
-        top: 50px;
+        top: -50px;
         right: 10px;
     }
     50%{
-        top: 80px;
+        top: -100px;
         right: 0px;
     }
     100%{
-        top: 50px;
+        top: -50px;
         right: 10px;
     }
 
