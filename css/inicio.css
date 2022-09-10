@@ -199,7 +199,6 @@ header #painel h2{
     display: flex;
     font-family: opens;
     justify-content: center;
-    border-bottom: 1px solid white;
     color: white;
     margin: auto;
     padding: 50px;
@@ -256,6 +255,7 @@ header #painel h2{
     font-family: opens;
     height: 5px;
     text-align: center;
+    background-color: black;
 }
 #skills #imgskill > div{
     width: 70px;
@@ -321,6 +321,48 @@ header #painel h2{
 
 }
 
+/*portfolio*/
+
+#portfolio{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: openS, Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+#portfolio div{
+    width: 30%;
+    height: 200px;
+    border: 1px solid #2558f3;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background-clip: content-box;
+    background-size: cover;
+}
+
+#portfolio #primeiro{
+    background-image: url(../photos/projetos/ppt.png);  
+}
+#portfolio #segundo{
+    background-image: url(../photos/projetos/supremo.png);  
+}
+#portfolio #terceiro{
+    background-image: url(../photos/projetos/lista.png);  
+}
+#portfolio #quarto{
+    background-image: url(../photos/projetos/carros.png);  
+}
+#portfolio #quinto{
+    
+}
+#portfolio #sexto{
+ 
+}
+#portfolio a{
+    text-decoration: none;
+}
 #oqfaco{
     text-align: center;
     padding-top: 50px;
@@ -349,7 +391,7 @@ header #painel h2{
     margin-bottom: 20px;
 }
 #oqfaco .box > div p{
-    text-align: justify;
+    text-align: left;   
 }
 
 /*Contato*/
@@ -424,18 +466,24 @@ header #painel h2{
     }
     #apresentacao .quemsou{
         width: 90%;
-        margin: 10px auto 50px auto;
+        margin: 130px auto 50px auto;
     }
     #apresentacao .foto{
         width: 50%;
         margin: 0px auto;
+    }
+    #apresentacao #citacao{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 150px auto;
     }
 
 
 
 
     #contato form{
-        width: 90%;
+        width: 80%;
+        
     }
     #contato form #duvida{
         font-size: 15px;
@@ -467,6 +515,12 @@ header #painel h2{
     }
     header #painel #nome{
         margin-top: 80px;
+    }
+    #oqfaco .box {
+        flex-direction: column;
+    }
+    #oqfaco .box > div{
+        margin-bottom: 10px;
     }
 
 }
