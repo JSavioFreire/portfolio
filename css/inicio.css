@@ -463,9 +463,10 @@ header #painel h2{
 
     #apresentacao{
         flex-direction: column-reverse;
+        padding: 20px;
     }
     #apresentacao .quemsou{
-        width: 90%;
+        width: 100%;
         margin: 130px auto 50px auto;
     }
     #apresentacao .foto{
