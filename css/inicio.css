@@ -29,6 +29,11 @@
 .clear{
     clear: both;
 }
+a{
+    text-decoration: none;
+    color: white;
+    
+}
     
     /*Imagem de fundo*/
 
@@ -131,6 +136,7 @@ header #menuprincipal{
 header #menuprincipal li{
     display: inline-block;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 /*Painel*/
@@ -443,6 +449,12 @@ header #painel h2{
     color: white;
     font-size: 20px;
     border: 1px solid white;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: openS, Arial, Helvetica, sans-serif;
 }
 
 
