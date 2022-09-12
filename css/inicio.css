@@ -138,6 +138,10 @@ header #menuprincipal li{
     margin-right: 20px;
     cursor: pointer;
 }
+header #menuprincipal li:hover{
+    transition: 1s;
+    color: #658bfc;
+}
 
 /*Painel*/
 
@@ -222,6 +226,11 @@ header #painel h2{
     transform: translate(-50%,-50%);
     border: 2px solid #2558f3;
     
+}
+#apresentacao .foto img:hover{
+    width: 250px;
+    transition: 1s;
+
 }
 #apresentacao .quemsou{
     width: 34%;
